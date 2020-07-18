@@ -1,9 +1,9 @@
 function update(){
-    var msg = document.getElementById('msg')
-    var image = document.getElementById('image')
-    var data = new Date()
-    var hour = data.getHours()
-    //var hour = 19
+    const msg = document.getElementById('msg')
+    const image = document.getElementById('image')
+    const data = new Date()
+    const hour = data.getHours()
+    //const hour = 19
     msg.innerHTML = `Now it's ${hour} o'clock`
 
     if(hour >= 0 && hour < 12){

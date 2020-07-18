@@ -1,16 +1,17 @@
 function verify(){
-    var data = new Date()   
-    var year = data.getFullYear()
-    var fyear = document.getElementById('txtyear')
-    var res = document.querySelector('div#res')
+    const data = new Date()   
+    const year = data.getFullYear()
+    const fyear = document.getElementById('txtyear')
+    const res = document.querySelector('div#res')
+
     if(fyear.value.length == 0 || fyear.value > year){
         alert('[Error] verify the data and try again')
     }else{
-        var fsex = document.getElementsByName('radsex')
-        var age = year - fyear.value
-        var genre = ''
+        const fsex = document.getElementsByName('radsex')
+        const age = year - fyear.value
+        let genre = ''
 
-        var img = document.createElement('img')
+        const img = document.createElement('img')
         img.setAttribute('id', 'picture')
 
         if(fsex[0].checked){
